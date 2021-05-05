@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--icon style sheet-->
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="contactUs.css">
+</head>
+<body>
+  <div class="maincon">
+<div class="container">
+    <div class="header">
+      <div id="ib">
+        LABOUR POINT
+      </div>
+      <div id="h">
+        <a href="#">Home</a>
+      </div>
+    </div>
+<!--menu button-->
+
+  <div class="sidebar">
+    <div class="all">
+      <!--menu button-->
+      <div class="logo_content">
+
+        <!--profile image-->
+        <div class="logo">
+
+          <header>
+            <img src="profile.jpg" alt="">
+           <center> <h3 class="profile_name">KAOKO</h3></center>
+          </header>
+        </div>
+        <i class="bx bx-menu" id="btn"></i>
+      </div>
+
+      <ul class="nav_list">
+        <li class="top"> <a href="#" ><span class="links_name" style="color: black; font-size: 23px; font-weight: bold;"> Profile</span></a> </li> 
+                <li> <a href="#" ><span class="links_name" style="color: black; font-size: 23px; font-weight: bold;">Change Password</span></a> </li> 
+                <li> <a href="#"><span class="links_name" style="color: black; font-size: 23px; font-weight: bold;">Log Out</span></a> </li> 
+    </div>
+    <!--social icon-->
+
+    <div class="navour">
+      <font >Our Location</font>
+      <p>Department Of Computer<br>Science,Universirty Of Peshawar,Pakistan.</p>
+      <font id="Follow">Follow Us</font>
+      <img id="o" src="images/fb.jpg"  style="width: 60px;height: 70px;">
+      <img id="p" src="images/tw.png" style="width: 60px;height: 70px;">
+      <img id="q" src="images/in.jpg" style="width: 60px;height: 70px;">
+      <img id="r" src="images/in.png" style="width: 60px;height: 70px;">
+      <img id="wt" src="images/wtt.png" style="width: 50px;height: 50px;">
+      <font class="no">+92-333-123456</font>
+    </div>
+    <div class="rightnav">
+      <div>
+        <font align="center" style="color: black;font-size: 30px;font-weight: bold; margin-left: 110px; margin-top: -10px;"><strong>Contact Us</strong> </font>
+      </div>
+      <form>
+      <table>
+        <table align="center">
+          <th>
+            <td></td>
+          </th>
+          <tr>
+            <td colspan="3">
+              <input type="text" id="fname" name="fname" placeholder="Your Full Name ">
+           </td>
+            
+          </tr>
+          <tr>
+            <td colspan="3">
+               <input type="email" id="email" name="email"  placeholder="Enter Your Email ">
+            </td>
+          
+          </tr>
+           <tr>
+            <td colspan="3">
+                        <textarea name="comment" form="usrform" placeholder="Leave Your Massage" rows="5" cols="40"></textarea>
+                    </td>
+            
+          </tr>
+           <tr>
+            <td  colspan="3"><input type="submit">
+            </td>
+            
+          </tr>
+        </table>
+      </table>
+      </form>
+    </div>
+      <div class="footer">
+        
+      </div>
+    </div>
+       <div class="footer">
+        <ul >
+                <li><a href="#">Privacy</a></li>
+                <span class="separator"></span>
+                <li><a href="#">Term & Conditions</a></li>
+                <span class="separator"></span>
+                <li><a href="#">Contact Us</a></li>
+                <span class="separator"></span>
+                <li><a href="#">About Us</a></li>
+            </ul>
+            <p >&copy;LaborPoint. All Right Reserved</p>
+        
+      </div>
+  </div>
+<!--       -->
+  <script>
+    // active button using javascript
+
+    let btn = document.querySelector("#btn");
+    let sidebar = document.querySelector(".sidebar");
+    let searchBtn = document.querySelector(".bx-search");
+
+    btn.onclick = function(){
+      sidebar.classList.toggle("active");
+
+      if(btn.classList.contains("bx-menu")){
+        btn.classList.replace("bx-menu", "bx-menu-alt-right");
+      }
+      else{
+        btn.classList.replace("bx-menu-alt-right", "bx-menu");
+      }
+    }
+    
+   
+
+  </script>
+  
+</body>
+</html>
